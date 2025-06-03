@@ -5,16 +5,16 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mlkit_barcode_scanning/google_mlkit_barcode_scanning.dart';
 
-class EasyQrCodeScannerWidget extends StatefulWidget {
+class UniversalCodeScannerWidget extends StatefulWidget {
   final Function(String) onDetect;
 
-  const EasyQrCodeScannerWidget({super.key, required this.onDetect});
+  const UniversalCodeScannerWidget({super.key, required this.onDetect});
 
   @override
-  State<EasyQrCodeScannerWidget> createState() => _EasyQrCodeScannerWidget();
+  State<UniversalCodeScannerWidget> createState() => _UniversalCodeScannerWidget();
 }
 
-class _EasyQrCodeScannerWidget extends State<EasyQrCodeScannerWidget> {
+class _UniversalCodeScannerWidget extends State<UniversalCodeScannerWidget> {
   late CameraController _cameraController;
   late BarcodeScanner _barcodeScanner;
   bool _isDetecting = false;
@@ -23,7 +23,7 @@ class _EasyQrCodeScannerWidget extends State<EasyQrCodeScannerWidget> {
   @override
   void initState() {
     super.initState();
-    _barcodeScanner = BarcodeScanner(formats: [BarcodeFormat.qrCode]);
+    _barcodeScanner = BarcodeScanner(formats: [BarcodeFormat.all]);
     _initializeCamera();
   }
 

@@ -1,10 +1,10 @@
 {
   "roots": [
-    "easy_qr_code_scanner"
+    "universal_code_scanner"
   ],
   "packages": [
     {
-      "name": "easy_qr_code_scanner",
+      "name": "universal_code_scanner",
       "version": "0.0.1",
       "dependencies": [
         "camera",

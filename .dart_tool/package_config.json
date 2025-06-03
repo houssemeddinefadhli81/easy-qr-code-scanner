@@ -290,7 +290,7 @@
       "languageVersion": "3.3"
     },
     {
-      "name": "easy_qr_code_scanner",
+      "name": "universal_code_scanner",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.8"

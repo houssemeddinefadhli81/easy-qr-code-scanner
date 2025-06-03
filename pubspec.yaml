@@ -1,0 +1,29 @@
+name: easy_qr_code_scanner
+description: >
+  A Flutter QR code scanner widget using the device camera and Google ML Kit.
+  Easily integrate real-time QR code scanning into your applications.
+version: 0.0.1
+homepage: https://github.com/houssemeddinefadhli81/easy-qr-code-scanner
+
+environment:
+  sdk: ^3.8.0
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: ^0.11.1
+  google_mlkit_barcode_scanning: ^0.14.0
+  path_provider: ^2.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+topics:
+  - qrcode
+  - scanner
+  - barcode
+  - camera
+  - mlkit
